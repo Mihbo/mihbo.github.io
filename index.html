@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tip Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1>Tip Calculator</h1>
+            <div id="money">
+                <div>
+                    <label for="bill">Bill, $</label>    
+                    <input id="bill" required value="0">
+                </div>
+                <div>
+                    <label for="tip">Tip, %</label>
+                    <input id="tip" required  type="number" value="15">
+                </div>
+                <div >
+                    <label >Split among</label>
+                    <input id="split" type="checkbox" onclick="onSplitClick()">
+                    <input id="persons" type="number" min="2" class="concealable hidden" value="2">
+                </div>
+                <button id="clear" onclick="clearClick()">Clear</button>
+                <button id="calc" onclick="calculateClick()">Calculate</button>
+            </div>
+            <div id="results">
+                <div class="results_row">
+                    <div>Tip Amount</div>
+                    <div id="tip_total">$0.00</div>
+                </div>
+                <div class="results_row">
+                    <div>Total Price</div>
+                    <div id="price_total">$0.00</div>
+                </div>
+                <div class="concealable hidden">
+                    <h2>Per Person</h2>
+                    <div class="results_row">
+                        <div>Tip Amount</div>
+                        <div id="tip_person">$0.00</div>
+                    </div>
+                    <div class="results_row">
+                        <div>Total Price</div>
+                        <div id="price_person">$0.00</div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>
