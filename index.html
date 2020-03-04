@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+	<!-- Header Start -->
+	<header class="header">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">Resume Builder</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Templates
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Resumes</a>
+								<a class="dropdown-item" href="#">CVs</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Business Cards</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Pricing</a>
+						</li>
+					</ul>
+					<button class="btn btn-outline-success mr-2" type="submit">Log In</button>
+					<button class="btn btn-outline-success mr-2" type="submit">Sign Up</button>
+				</div>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1 class="header__h1 display-4">The Best Resume Site Ever</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<button type="button" name="button" class="header__button btn btn-lg btn-primary" data-toggle="modal" data-target="#exampleModal">Create your own resume</button>
+				</div>
+			</div>
+	</header>
+	<!-- /Header finish -->
+
+	<!-- Main Content -->
+	<main class="main container">
+		<div class="row">
+			<div class="col">
+				<h1 class="main__title">Benefits of using a resume builder</h1>
+			</div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-2">
+			<div class="col mb-4">
+				<div class="card h-100 ">
+					<div class="card-body">
+						<h3 class="card-title">The Outstanding Resume Layout</h3>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<a href="#" class="card-link">Learn More...</a>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-4">
+				<div class="card h-100 ">
+					<div class="card-body">
+						<h3 class="card-title">A Whole Bunch of Templates</h3>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<a href="#" class="card-link">Learn More...</a>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-4">
+				<div class="card h-100 ">
+					<div class="card-body">
+						<h3 class="card-title">Feedback</h3>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<a href="#" class="card-link">Learn More...</a>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-4">
+				<div class="card h-100 ">
+					<div class="card-body">
+						<h3 class="card-title">Free Samples of Real Resumes<sup>*</sup></h3>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<a href="#" class="card-link">Learn More...</a>
+						<p class="card-text mt-3"><small class="text-muted"><sup>*</sup>For Premium Subscribers Only</small></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Log In</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1">
+							</div>
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Remember me</label>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-success"  data-dismiss="modal">Login</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+	<!-- /Main Content -->
+
+	<!-- Footer -->
+	<footer class="footer">
+		<p class="footer__p">Copyright &copy; 2020 by MyOwnSoftware Inc. All rights reserved.</p>
+	</footer>
+	<!-- /Footer -->
+
+	<script src="js/scripts.min.js" charset="utf-8"></script>
+	<script>
+	</script>
+
+</body>
+
+</html>
